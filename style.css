@@ -1,0 +1,32 @@
+/* Animacions i estils addicionals */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#app {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Efecte de vidre més pronunciat */
+.bg-white\/10 {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Estils per a les targetes */
+.shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 5px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Transicions suaus */
+button, input[type="text"], input[type="number"], input[type="date"] {
+  transition: all 0.2s ease;
+}
+
+/* Efecte hover per als cotxes */
+.bg-white\/5:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
